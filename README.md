@@ -2,6 +2,12 @@
 
 Shitty Extension to doakey3/DashTable
 
+## Installation
+
+```zsh
+$ pip install -U dashtable-ext
+```
+
 ### RST 2 ASCII:
 
 ```rst
