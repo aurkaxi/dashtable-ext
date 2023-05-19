@@ -7,58 +7,14 @@ Shitty Extension to doakey3/DashTable
 ```zsh
 $ pip install -U dashtable-ext
 ```
+<div align="center">
 
-### RST 2 ASCII:
+# RST 2 ASCII:
 
-```rst
-+-----------+-----------+-----------------------+
-| Heading 1 | Heading 2 | Heading 3             |
-|           +-----------+-----------+-----------+
-|           | Heading 4 | Heading 5 | Heading 6 |
-+===========+-----------+-----------+-----------+
-| A         | B         | C                     |
-|           +-----------+                       |
-|           | D         |                       |
-|           +-----------+-----------+-----------+
-|           | E         | F         | G         |
-+-----------+-----------+-----------+-----------+
-| H                     | I         | J         |
-+-----------------------+-----------+           |
-| K                     | L         |           |
-|                       +-----------+-----------+
-|                       | M         | N         |
-+-----------------------+-----------+-----------+
-```
+<img src="https://github.com/aurkaxi/dashtable-ext/assets/72933395/aa636910-3aec-4729-a6c0-3e43535e8122" height="500"/>
 
-```py
-from dashtable.ext import rst2ascii, PresetStyle
-import dashtable
+## Output:
+### For `preset=PresetStyle.thin_thick_rounded`:
+<img src="https://github.com/aurkaxi/dashtable-ext/assets/72933395/6779e82e-6515-4aa1-b40e-57d8fd170b43" height="500" />
 
-with open("table.html", "r") as f:
-    html = f.read()
-
-table = dashtable.html2rst(html)
-print(rst2ascii(table = table, preset=PresetStyle.thin_thick_rounded))
-```
-
-Output:
-
-```bash
-╭───────────┬───────────┬───────────────────────╮
-│ Heading 1 │ Heading 2 │ Heading 3             │
-│           ├───────────┼───────────┬───────────┤
-│           │ Heading 4 │ Heading 5 │ Heading 6 │
-├━━━━━━━━━━━┼───────────┼───────────┴───────────┤
-│ A         │ B         │ C                     │
-│           ├───────────┤                       │
-│           │ D         │                       │
-│           ├───────────┼───────────┬───────────┤
-│           │ E         │ F         │ G         │
-├───────────┴───────────┼───────────┼───────────┤
-│ H                     │ I         │ J         │
-├───────────────────────┼───────────┤           │
-│ K                     │ L         │           │
-│                       ├───────────┼───────────┤
-│                       │ M         │ N         │
-╰───────────────────────┴───────────┴───────────╯
-```
+</div>
