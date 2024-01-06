@@ -1,3 +1,5 @@
+> Archive Reason: I no longer use this library, so I don't need this extension either. Base library is outdated too.
+
 # dashtable-ext
 
 Shitty Extension to doakey3/DashTable
